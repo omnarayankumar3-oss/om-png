@@ -1,11 +1,38 @@
-const search = document.getElementById('search');
+async function loadImages(){
 
-search.addEventListener('keyup', function() {
-    const value = this.value.toLowerCase();
-    const cards = document.querySelectorAll('.card');
+const res=await fetch("/api/images");
 
-    cards.forEach(card => {
-        const text = card.innerText.toLowerCase();
-        card.style.display = text.includes(value) ? 'block' : 'none';
-    });
+const data=await res.json();
+
+const gallery=document.getElementById("gallery");
+
+gallery.innerHTML="";
+
+data.forEach(img=>{
+
+gallery.innerHTML+=`
+
+<div class="card">
+
+<img src="/uploads/${img.filename}">
+
+<h3>${img.originalname}</h3>
+
+<a
+class="download"
+href="/download/${img.filename}"
+>
+
+Download
+
+</a>
+
+</div>
+
+`;
+
 });
+
+}
+
+loadImages();

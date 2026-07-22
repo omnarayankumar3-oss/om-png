@@ -1,114 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OM PNG - Free Transparent PNG Images</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OM PNG PRO</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>OM PNG</h1>
-        <p>Free Transparent PNG Images Download</p>
+<header>
 
-        <input type="text" id="search" placeholder="Search PNG Images...">
-    </header>
+<h1>OM PNG PRO</h1>
 
-    <!-- Categories -->
-    <section class="categories">
-        <div class="category">🌸 Flowers</div>
-        <div class="category">🚗 Cars</div>
-        <div class="category">🐦 Birds</div>
-        <div class="category">🍔 Food</div>
-        <div class="category">💻 Technology</div>
-        <div class="category">🎉 Festival</div>
-        <div class="category">🎉 Nature</div>
-    </section>
+<input
+id="search"
+type="text"
+placeholder="Search PNG..."
+>
 
-    <!-- PNG Gallery -->
-    <section class="gallery">
+</header>
 
-        <div class="card">
-            <img src="flower.png" alt="Flower PNG">
-            <h3>Flower PNG</h3>
-            <a href="flower.png" download>
-                <button>Download</button>
-            </a>
-        </div>
-           <div class="card">
-‎            <img src="corner.png" alt="corner PNG">
-‎            <h3>corner png</h3>
-‎            <a href="corner.png" download>
-‎                <button>Download</button>
-‎            </a>
-‎        </div>
-        <div class="card">
-‎            <img src="hanuman.png" alt="god PNG">
-‎            <h3>hanuman png</h3>
-‎            <a href="hanuman.png" download>
-‎                <button>Download</button>
-‎            </a>
-‎        </div>
-        
-        <div class="card">
-            <img src="sunset.png" alt="Sunset PNG">
-            <h3>sunset png</h3>
-            <a href="sunset.png" download>
-                <button>Download</button>
-            </a>
-        </div>
-        <div class="card">
-‎            <img src="ram.png" alt="RAM PNG">
-‎            <h3>RAM png</h3>
-‎            <a href="ram.png" download>
-‎                <button>Download</button>
-‎            </a>
-‎        </div>
-        <div class="card">
-            <img src="plant.png" alt="Plant PNG">
-            <h3>plant png</h3>
-            <a href="plant.png" download>
-                <button>Download</button>
-            </a>
-        </div>
-        <div class="card">
-            <img src="Birthday.png" alt="Sunset PNG">
-            <h3>Birthday png</h3>
-            <a href="Birthday.png" download>
-                <button>Download</button>
-            </a>
-        </div>
+<section class="upload">
 
-        <div class="card">
-            <img src="car.png" alt="Car PNG">
-            <h3>Car PNG</h3>
-            <a href="car.png" download>
-                <button>Download</button>
-            </a>
-        </div>
- <div class="card">
-            <img src="apple.png" alt="Fruit PNG">
-            <h3>Apple PNG</h3>
-            <a href="apple.png" download>
-                <button>Download</button>
-            </a>
-        </div>
-        <div class="card">
-            <img src="bird.png" alt="Bird PNG">
-            <h3>Bird PNG</h3>
-            <a href="bird.png" download>
-                <button>Download</button>
-            </a>
-        </div>
+<form
+action="/upload"
+method="POST"
+enctype="multipart/form-data"
+>
 
-    </section>
+<input
+type="file"
+name="png"
+accept=".png"
+required
+>
 
-    <footer>
-        <p>© 2026 OM PNG | All Rights Reserved</p>
-    </footer>
+<button>
+Upload PNG
+</button>
 
-    <script src="script.js"></script>
+</form>
+
+</section>
+
+<section id="gallery">
+
+</section>
+
+<script src="script.js"></script>
+
 </body>
 </html>
